@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+}
+
+#class {
+    color: rgb(211, 6, 6);
+}
+p  {
+    color: aqua;
+} 
+.class {
+    color: violet;
+}
+h2 {
+    color: chocolate;
+}
+body {
+  background-color: rgb(0, 2, 1);
+} 
+form fieldset {
+    background-color: aquamarine;
+}
+button {background-color: #8e0303;}

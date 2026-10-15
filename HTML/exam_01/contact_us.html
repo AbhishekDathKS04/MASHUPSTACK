@@ -20,16 +20,17 @@
   <main>
 <h1>Contact Us</h1>
     <form>
+    <fieldset>
        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z]{0-150}">
         <br><br>
         <label for="mobile">Mobile Number:</label>
-        <input type="tel" id="mobile" name="mobile" pattern="[0-9],{10}">
+        <input type="tel" id="mobile" name="mobile" placeholder="enter your mobile number" pattern="[0-9]{10}">
         <br><br>
         <label for="type">Communication Type:</label>
         <select id="type" name="type">
             <option>Sales</option>
-            <option>Service</option>)
+            <option>Service</option>
             <option>Enquiry</option>
             <option>Advertisement</option>
             <option>Complaint</option>
@@ -39,6 +40,7 @@
         <textarea id="description" name="description" rows="4" cols="30"></textarea>
         <br><br>
         <button type="submit">Submit</button>
+    </fieldset>
     </form>
 </main>
 <footer align="center">
