@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        .product-card {
+            border: 6px solid black;
+            margin: 30px auto;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: aquamarine;
+            width: 350px;
+        }
+
+        .product-image {
+            position: relative;
+            text-align: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .price {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: deeppink;
+            color: white;
+            padding: 10px;
+            border-radius: 0 10px 0 10px;
+        }
+
+        .product-details {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: lightgray;
+        }
+
+        .details-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .description {
+            width: 50%;
+        }
+
+        .features {
+            width: 50%;
+            border-left: 2px solid lightgreen;
+            padding-left: 10px;
+        }
+
+        .features p {
+            font-size: 12px;
+        }
+
+        .rating {
+            color: deeppink;
+        }
+
+        button {
+            display: block;
+            margin: 15px auto 0;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: deeppink;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-card">
+
+        <div class="product-image">
+            <img src="images/61cIHzCDl6L.jpg"
+                 alt="boAt wireless headphones">
+
+            <span class="price">₹1,999</span>
+        </div>
+
+        <div class="product-details">
+
+            <div class="details-content">
+
+                <div class="description">
+                    <h2>boAt Rockerz 480</h2>
+
+                    <p>
+                        Enjoy clear sound and comfortable
+                        listening with these headphones.
+                    </p>
+
+                    <p class="rating">★ ★ ★ ★ ★</p>
+                </div>
+
+                <div class="features">
+                    <p>✔ Wireless connection</p>
+                    <p>✔ Long battery life</p>
+                    <p>✔ Comfortable design</p>
+                </div>
+
+            </div>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
