@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        /* container card style */
+        .product-card {
+            border: 3px solid black;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: aquamarine;
+            width: auto ;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .product-image {
+            position: relative;
+            text-align: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+        }
+
+        .price {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: deeppink;
+            color: white;
+            padding: 7px;
+            border-radius: 0 10px 0 10px;
+        }
+
+        .product-details {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: lightgray;
+        }
+
+        .details-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .description {
+            width: 50%;
+        }
+
+        .description h2 {
+            font-size: 17px;
+        }
+
+        .description p {
+            font-size: 12px;
+        }
+
+        .features {
+            width: 50%;
+            border-left: 2px solid lightgreen;
+            padding-left: 8px;
+        }
+
+        .features p {
+            font-size: 10px;
+        }
+
+        .rating {
+            color: deeppink;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto 0;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            background-color: deeppink;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand">GETSOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <!-- nav links -->
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">New Releases</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Best sellers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">more options</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">sell</a>
+                <a class="dropdown-item" href="#">business</a>
+                <a class="dropdown-item" href="#">settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">account</a>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- nav side bar -->
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <!-- LEFT SIDEBAR -->
+                <div class="col-12 col-md-3">
+
+                    <!-- Sidebar toggle button -->
+    <button class="btn btn-primary d-md-none mb-2"
+            type="button"
+            data-toggle="collapse"
+            data-target="#sidebarMenu">
+
+        ☰ Categories
+
+    </button>
+
+    <!-- Sidebar navigation -->
+    <div class="collapse d-md-block" id="sidebarMenu">
+
+        <ul class="nav nav-pills flex-column">
+
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Headsets</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Mobiles Phones</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Laptops</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Gadgets</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-12 col-md-9">
+
+                <!-- Main content -->
+
+                <div class="row">
+
+                <!-- PRODUCT 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="61cIHzCDl6L.jpg" alt="boAt headphones">
+                            <span class="price">₹1,999</span>
+                        </div>
+
+                        <div class="product-details">
+                            <div class="details-content">
+                                <div class="description">
+                                    <h2>boAt Rockerz 480</h2>
+                                    <p>Enjoy clear sound and comfortable listening.</p>
+                                    <p class="rating">★ ★ ★ ★ ★</p>
+                                </div>
+
+                                <div class="features">
+                                    <p>✔ Wireless</p>
+                                    <p>✔ Long battery</p>
+                                    <p>✔ Comfortable</p>
+                                </div>
+                            </div>
+
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="61cIHzCDl6L.jpg" alt="Headphones">
+                            <span class="price">₹1,499</span>
+                        </div>
+                        <div class="product-details">
+                            <div class="details-content">
+                                <div class="description">
+                                    <h2>boAt Rockerz 450</h2>
+                                    <p>Enjoy music with rich and powerful sound.</p>
+                                    <p class="rating">★ ★ ★ ★ ☆</p>
+                                </div>
+                                <div class="features">
+                                    <p>✔ Bluetooth</p>
+                                    <p>✔ Lightweight</p>
+                                    <p>✔ Foldable</p>
+                                </div>
+                            </div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="61cIHzCDl6L.jpg" alt="Headphones">
+                            <span class="price">₹2,499</span>
+                        </div>
+                        <div class="product-details">
+                            <div class="details-content">
+                                <div class="description">
+                                    <h2>boAt Nirvana</h2>
+                                    <p>Experience immersive audio quality.</p>
+                                    <p class="rating">★ ★ ★ ★ ★</p>
+                                </div>
+                                <div class="features">
+                                    <p>✔ HD Audio</p>
+                                    <p>✔ Bass boost</p>
+                                    <p>✔ Wireless</p>
+                                </div>
+                            </div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="61cIHzCDl6L.jpg" alt="Headphones">
+                            <span class="price">₹1,799</span>
+                        </div>
+                        <div class="product-details">
+                            <div class="details-content">
+                                <div class="description">
+                                    <h2>boAt Rockerz 550</h2>
+                                    <p>Comfortable headphones for everyday use.</p>
+                                    <p class="rating">★ ★ ★ ★ ☆</p>
+                                </div>
+                                <div class="features">
+                                    <p>✔ Deep Bass</p>
+                                    <p>✔ Wireless</p>
+                                    <p>✔ Durable</p>
+                                </div>
+                            </div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="61cIHzCDl6L.jpg" alt="Headphones">
+                            <span class="price">₹2,199</span>
+                        </div>
+                        <div class="product-details">
+                            <div class="details-content">
+                                <div class="description">
+                                    <h2>boAt Rockerz 551</h2>
+                                    <p>Enjoy your favourite music anywhere.</p>
+                                    <p class="rating">★ ★ ★ ★ ★</p>
+                                </div>
+                                <div class="features">
+                                    <p>✔ Bluetooth</p>
+                                    <p>✔ Clear Sound</p>
+                                    <p>✔ Soft Cushions</p>
+                                </div>
+                            </div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 6 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="61cIHzCDl6L.jpg" alt="Headphones">
+                            <span class="price">₹1,899</span>
+                        </div>
+                        <div class="product-details">
+                            <div class="details-content">
+                                <div class="description">
+                                    <h2>boAt Rockerz 600</h2>
+                                    <p>Designed for comfort and entertainment.</p>
+                                    <p class="rating">★ ★ ★ ★ ☆</p>
+                                </div>
+                                <div class="features">
+                                    <p>✔ Wireless</p>
+                                    <p>✔ Long Battery</p>
+                                    <p>✔ Lightweight</p>
+                                </div>
+                            </div>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
