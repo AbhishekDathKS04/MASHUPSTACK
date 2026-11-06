@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #txt::first-line {
+            font-weight: bold;
+        }
+
+        #txt::first-letter {
+            font-size: 35px;
+            color: deeppink;
+        }
+        
+        blockquote::before {
+            content: "“";
+            font-size: 35px;
+        }
+        
+        blockquote::after {
+            content: "";
+            font-size: 35px;
+        }
+
+        .author {
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: deeppink;
+        }
+
+        h4 {
+            display: inline-block;
+            width: 45%;
+        }
+        h4 + h4 {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog">
+            <!-- header -->
+            <header>
+              <h1>The Art of Never Giving Up</h1>
+              <p>By Abhishek | oct 28, 2026</p>
+            </header>
+            <hr>
+
+            <!-- contents -->
+
+             <div class="content">
+
+                <p id="txt">Every journey begins with a single step, and every great achievement starts with the courage to try.</p>
+                <p>Life is full of challenges, unexpected turns and difficult moments. Sometimes progress feels slow, but consistency and patience can make a remarkable difference. Keep learning, keep improving and never underestimate small efforts.</p>
+                <p>Success isn't always about reaching the destination quickly. It's about learning from failures, growing through experiences and having the determination to continue.</p>
+
+                <!-- blockquote -->
+
+                <blockquote>
+                    Great things are done by a series of small things brought together.
+                    <p class="author">— Vincent van Gogh</p>
+                </blockquote>
+             </div>
+
+             <h3>different link styles</h3>
+             
+             <a href="https://example.com">Read more</a><br>
+             <a href="https://example.com">Read more</a><br>
+             <a href="https://example.com">Read more</a>
+             <hr>
+
+             <!-- footer -->
+              <footer>
+                <h4>Related Articles</h4>
+                <h4>More stories</h4>
+              </footer>
+    </div>
+</body>
+</html>
