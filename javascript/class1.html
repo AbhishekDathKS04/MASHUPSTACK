@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores</title>
+</head>
+<body>
+    <h2>Sale Tracker</h2>
+    <p>Online store - Sales summary</p>
+    <h4>price</h4>
+    <ul>
+        <li>tshirt - 400 </li>
+        <li>cap - 150</li>
+    </ul>
+    <h4>todays sale</h4>
+    <ul>
+        <li>tshirt 5</li>
+        <li>cap 3</li>
+    </ul>
+    <p>todays total earnings is</p><p id="total">total</p>
+    <script>var a,b,x,y,z;
+        //let a number of shirt sold and let b be number of caps sold let x be tshirts price, y be caps price and z be total earnings
+
+         x=400;y=150;a=5;b=3;
+         z=(x*a)+(y*b)
+         document.getElementById("total").innerHTML = z;
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>random number : </p><p id="random"></p>
+    <p>user score : </p><p id="user"></p>
+    <p>Difference : </p><p id="diff"></p>
+    <p>Rounded Square Root : </p><p id="rounded-sqrt"></p>
+    <p>PI:</p><p id="pi"></p>
+    <p>implicit Conversation:</p><p id="impcon"></p>
+    <script>
+        let random = Math.floor(Math.random() * 100) + 1;
+
+        let user = "75";
+        let score = Number(user);
+
+        let diff = random - score;
+
+        let rounded = Math.round(Math.sqrt(score));
+
+        let pi = Math.PI;
+
+        let impcon = "50" * 2;
+
+        // Display outputs
+        document.getElementById("random").innerHTML = random;
+        document.getElementById("user").innerHTML = score;
+        document.getElementById("diff").innerHTML = diff;
+        document.getElementById("rounded-sqrt").innerHTML = rounded;
+        document.getElementById("pi").innerHTML = pi;
+        document.getElementById("impcon").innerHTML = impcon;
+    </script>
+</body>
+</html>

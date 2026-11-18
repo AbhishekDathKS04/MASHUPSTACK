@@ -19,6 +19,8 @@
         .product-image {
             position: relative;
             text-align: center;
+            border: 2px solid black;
+            border-radius: 15px 0 15px 0;
         }
 
         .product-image img {
@@ -79,6 +81,16 @@
             color: white;
             cursor: pointer;
         }
+        @media (max-width: 600px) {
+
+    .product-card {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 14px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
     </style>
 </head>
 
@@ -116,11 +128,10 @@
 
             </div>
 
-            <button>Add to Cart</button>
+            <button>Buy Now</button>
 
         </div>
 
     </div>
-
 </body>
 </html>
