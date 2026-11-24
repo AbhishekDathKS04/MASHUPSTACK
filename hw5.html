@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>User Profile</h2>
     
+    <button onclick="checkAccess()">Check Access</button>
+
+    <p id="demo"></p>
+
+        <script>
+            var user = {
+                name: "Abhishek",
+                age: 22,
+                isAdmin: true
+            };
+
+            function checkAccess() {
+                var result = (user.age >= 18 && user.isAdmin)
+                    ? "Access Granted"
+                    : "Access Denied";
+
+                document.getElementById("demo").innerHTML = result;
+
+                var ageExists = "age" in user;
+
+                console.log("Age property exists: " + ageExists);
+
+                delete user.age;
+
+                console.log(user);
+            }
+        </script>
 </body>
 </html>

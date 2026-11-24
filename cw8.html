@@ -6,34 +6,53 @@
     <title>Document</title>
 </head>
 <body>
-<h2>User Profile</h2>
-    
-    <button onclick="checkAccess()">Check Access</button>
+  <h2>Grocery Store Calculator</h2>
 
-    <p id="demo"></p>
+    <script>
+        var count = 0;
 
-        <script>
-            var user = {
-                name: "Abhishek",
-                age: 22,
-                isAdmin: true
-            };
+        while (count < 5) {
+            var code = prompt("Enter product code (1-3):");
+            var quantity = Number(prompt("Enter quantity:"));
 
-            function checkAccess() {
-                var result = (user.age >= 18 && user.isAdmin)
-                    ? "Access Granted"
-                    : "Access Denied";
+            var price = 0;
+            var item = "";
+            var total = 0;
 
-                document.getElementById("demo").innerHTML = result;
+            switch (code) {
+                case "1":
+                    item = "Apple";
+                    price = 30;
+                    break;
 
-                var ageExists = "age" in user;
+                case "2":
+                    item = "Banana";
+                    price = 10;
+                    break;
 
-                console.log("Age property exists: " + ageExists);
+                case "3":
+                    item = "Mango";
+                    price = 50;
+                    break;
 
-                delete user.age;
-
-                console.log(user);
+                default:
+                    console.log("Invalid product code");
+                    continue;
             }
-        </script>
+
+            total = price * quantity;
+
+            console.log("Product: " + item);
+            console.log("Total Price: " + total);
+
+            if (total > 100) {
+                console.log("High purchase");
+            } else {
+                console.log("Normal purchase");
+            }
+
+            count++;
+        }
+    </script>
 </body>
 </html>
