@@ -48,7 +48,33 @@
     </div>
   </div>
 </nav>
-    
-    
+<h2>Item Return Eligibility</h2>
+
+<button onclick="checkReturn()">Check Return</button>
+
+<p id="demo"></p>
+
+<script>
+var order = {
+    itemName: "Shoes",
+    isDelivered: true,
+    daysSinceDelivery: 5
+};
+
+function checkReturn() {
+    var result = (order.isDelivered && order.daysSinceDelivery <= 7)
+        ? "Eligible for Return"
+        : "Return Period Expired";
+
+    document.getElementById("demo").innerHTML = result;
+
+    var itemExists = "itemName" in order;
+    console.log("Item Name Exists: " + itemExists);
+
+    delete order.daysSinceDelivery;
+
+    console.log(order);
+}
+</script>   
   </body>
 </html>
